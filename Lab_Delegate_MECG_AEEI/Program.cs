@@ -109,7 +109,9 @@ class GestorProductos
 
     public void ConsultarProductos(string nombre)
     {
-        var productosEncontrados = productos.Where(p => p.Nombre.Contains(nombre)).ToList();
+        var productosEncontrados = productos
+            .Where(p => p.Nombre.IndexOf(nombre, StringComparison.OrdinalIgnoreCase) >= 0)
+            .ToList();
 
         if (productosEncontrados.Any())
         {
@@ -161,7 +163,7 @@ class GestorProductos
     {
         try
         {
-            using (StreamWriter writer = new StreamWriter(filePath))
+            using (StreamWriter writer = new StreamWriter(filePath))  // Agregar true para permitir la adición al final del archivo
             {
                 foreach (var producto in productos)
                 {
@@ -207,6 +209,7 @@ class Program
                     case 1:
                         // Registro de Productos
                         Console.WriteLine("Seleccionaste Registro de Productos");
+
                         Console.Write("Ingrese el nombre del producto: ");
                         string nombreProducto = Console.ReadLine();
                         Console.Write("Ingrese la descripción del producto: ");
@@ -393,3 +396,5 @@ class Program
         }
     }
 }
+
+
