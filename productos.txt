@@ -1,0 +1,13 @@
+Café,Colombiano,5,30
+Arroz,Blanco,2,80
+Aceite,Oliva,7,20
+Azúcar,Blanca,1,60
+Huevos,Docena,3,42
+Tomate,Cherry,4,25
+Pollo,Pechuga,8,17
+Sal,De mar,4,26
+Azucar,Glass,9,22
+Carne,Roja,12,91
+Elote,Amarillo,3,54
+Pan,Integral,4,57
+Pan,Blanco,4.5,21
