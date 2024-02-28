@@ -55,10 +55,10 @@ class GestorNotificaciones
 
     public static void EnviarMensaje(string mensaje)
     {
-        const string accountSid = "ACdad79eab612cd88cded23984d5e6be5b";
-        const string authToken = "50fde90d5c11cf8f0b16f7b52d841085";
-        const string twilioPhoneNumber = "+12293942404"; // Debes adquirir un número de teléfono Twilio para enviar mensajes
-        const string toPhoneNumber = "+50230324209"; // El número al que enviarás el mensaje
+        const string accountSid = "AC74c7bdc8a4c56fdabaa7ecfd6e5521a5";
+        const string authToken = "e966754ee1f90e499df649744c42ac35";
+        const string twilioPhoneNumber = "+14159368101"; // Debes adquirir un número de teléfono Twilio para enviar mensajes
+        const string toPhoneNumber = "+50257047294"; // El número al que enviarás el mensaje
 
         TwilioClient.Init(accountSid, authToken);
 
