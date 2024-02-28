@@ -167,7 +167,8 @@ class GestorProductos
             {
                 foreach (var producto in productos)
                 {
-                    writer.WriteLine($"{producto.Nombre},{producto.Descripcion},{producto.Precio},{producto.CantidadDisponible}");
+                    // Utiliza CultureInfo.InvariantCulture para el precio
+                    writer.WriteLine($"{producto.Nombre},{producto.Descripcion},{producto.Precio.ToString(CultureInfo.InvariantCulture)},{producto.CantidadDisponible}");
                 }
             }
         }
